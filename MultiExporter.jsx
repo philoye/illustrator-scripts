@@ -425,7 +425,7 @@ var nyt_png_exporter = {
                 base_filename = this.base_path + "/" + this.prefix + lyr_name + this.suffix
 
               } else if (this.export_code == 'both') {
-                base_filename = this.base_path + "/" + this.prefix + artboardName + '-' + lyr_name + this.suffix
+                base_filename = this.base_path + "/" + this.prefix +  lyr_name + '_' + artboardName + this.suffix
 
               }
 
