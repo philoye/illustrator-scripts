@@ -321,7 +321,7 @@ var nyt_png_exporter = {
       options = new ExportOptionsPNG8();
       options.antiAliasing = true;
       options.transparency = this.transparency;
-      options.artBoardClipping = true;
+      options.artBoardClipping = false;
       options.horizontalScale = this.scaling;
       options.verticalScale = this.scaling;
 
@@ -329,20 +329,20 @@ var nyt_png_exporter = {
       options = new ExportOptionsPNG24();
       options.antiAliasing = true;
       options.transparency = this.transparency;
-      options.artBoardClipping = true;
+      options.artBoardClipping = false;
       options.horizontalScale = this.scaling;
       options.verticalScale = this.scaling;
 
     } else if (this.format == 'PDF') {
       options = new PDFSaveOptions();
       options.compatibility = PDFCompatibility.ACROBAT5;
-      options.generateThumbnails = true;
+      options.generateThumbnails = false;
       options.preserveEditability = false;
 
     } else if (this.format == 'JPG') {
       options = new ExportOptionsJPEG();
       options.antiAliasing = true;
-      options.artBoardClipping = true;
+      options.artBoardClipping = false;
       options.horizontalScale = this.scaling;
       options.verticalScale = this.scaling;
       options.qualitySetting = this.jpg_quality;
